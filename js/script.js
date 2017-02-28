@@ -3,7 +3,7 @@ window.addEventListener("keydown", function(e) {
 	   element
 	*/
 	var audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); 
-
+	var key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
 	if(!audio)   //Exit the function if an invalid key is pressed
 		return;
@@ -11,7 +11,7 @@ window.addEventListener("keydown", function(e) {
 	audio.currentTime = 0; //Rewind the audio to the start on each key press
 
 	audio.play(); //Play the audio
-
+	key.classList.add("playing"); //Change the style of each key by adding the playing class
 
 
 });

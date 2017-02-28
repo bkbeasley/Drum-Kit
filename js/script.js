@@ -1,4 +1,6 @@
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", playAudio);
+
+function playAudio(e) {
 	/* Get the current key being pressed as well as the corresponding
 	   element
 	*/
@@ -17,5 +19,4 @@ window.addEventListener("keydown", function(e) {
 	setTimeout(function(){
 		key.classList.remove('playing');
 	}, 70);
-
-});
+}

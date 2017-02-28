@@ -6,4 +6,5 @@ A basic drum kit that includes several percussion instruments, and plays a sound
 
 * Vanilla Javascript
 
+Try it: https://bkbeasley.github.io/Drum-Kit/
 

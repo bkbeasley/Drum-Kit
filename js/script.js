@@ -13,5 +13,9 @@ window.addEventListener("keydown", function(e) {
 	audio.play(); //Play the audio
 	key.classList.add("playing"); //Change the style of each key by adding the playing class
 
+	//Remove the playing class after .07 seconds
+	setTimeout(function(){
+		key.classList.remove('playing');
+	}, 70);
 
 });
